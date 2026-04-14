@@ -22,8 +22,7 @@ public class OrderService {
     private final OrderLogHistoryService orderLogHistoryService;
 
     @Autowired
-    public OrderService(OrderRepository orderRepository, OrderLogHistoryService orderLogHistoryService) {
-        this.orderRepository = orderRepository;
+    public OrderService(OrderLogHistoryService orderLogHistoryService) {
         this.orderLogHistoryService = orderLogHistoryService;
     }
 
